@@ -6,19 +6,24 @@
     </a>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="?mod=sale">
+      <i class="fas fa-fw fa-user"></i>
+      <span>Bán Hàng</span></a>
+  </li>
+  <li class="nav-item">
     <a class="nav-link" href="?mod=employee">
       <i class="fas fa-fw fa-chart-area"></i>
-      <span>Employee</span>
+      <span>Nhân Viên</span>
     </a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="?mod=customer">
       <i class="fas fa-fw fa-table"></i>
-      <span>Customer</span></a>
+      <span>Khách Hàng</span></a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="?mod=product">
       <i class="fas fa-fw fa-user"></i>
-      <span>Product</span></a>
+      <span>Sản Phẩm</span></a>
   </li>
 </ul>

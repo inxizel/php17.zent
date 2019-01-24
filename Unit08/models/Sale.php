@@ -1,9 +1,9 @@
 <?php
 	require_once('models/Model.php');
-	class Product extends Model{
+	class Sale extends Model{
 		
 			var $conn;
-			var $table_name = 'PRODUCTS';
+			var $table_name = 'SALES';
 			var $primary_key = 'code';
 		
 	}

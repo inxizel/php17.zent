@@ -24,7 +24,7 @@
                 <input type="text" class="form-control" id="" placeholder="" name="price">
             </div>   
              
-            <button type="submit" name ="submit" class="btn btn-primary">Thêm Sản Phẩm</button>
+            <button type="submit" class="btn btn-primary">Thêm Sản Phẩm</button>
         </form>
     </div>
 <?php

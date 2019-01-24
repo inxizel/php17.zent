@@ -1,5 +1,5 @@
 <?php
-	
+	session_start();
 	$mod = isset($_GET['mod'])?$_GET['mod']:'';
 	$act = isset($_GET['act'])?$_GET['act']:'';
 
@@ -94,6 +94,65 @@
 					break;
 				default:
 					$customer_controller->show();
+					break;
+			}
+			break;
+		case 'sale':
+			require_once('controllers/SaleController.php');
+			$sale_controller = new SaleController();
+			switch ($act) {
+				case 'creat_bill':
+					$sale_controller->show();
+					break;
+				case 'purchase':
+					$sale_controller->purchase();
+					break;
+				case 'sale':
+					$sale_controller->sale();
+					break;
+				case 'addToCart':
+					$sale_controller->addToCart();
+					break;
+				case 'remove_product':
+					$sale_controller->remove_product();
+					break;
+				case 'payment':
+					$sale_controller->payment();
+					break;
+				
+				default:
+					$sale_controller->show();
+					break;
+			}
+			break;
+		case 'bill':
+			require_once('controllers/BillController.php');
+
+			$bill_controller = new BillController();
+			switch ($act) {
+				case 'list':
+					$bill_controller->show();
+					break;
+				case 'detail':
+					$bill_controller->detail();
+					break;
+				case 'add':
+					$bill_controller->add();
+					break;
+				case 'store':
+					$bill_controller->store();
+					break;
+				case 'edit':
+					$bill_controller->edit();
+					break;
+				case 'update':
+					$bill_controller->update();
+					break;
+				case 'delete':
+					$bill_controller->delete();
+					break;
+				default:
+					$bill_controller->show();
 					break;
 			}
 			break;

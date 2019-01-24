@@ -23,6 +23,8 @@
     <!-- Custom styles for this template-->
     <link href="public/css/sb-admin.css" rel="stylesheet">
 
+    <link href="public/css/styles.css" rel="stylesheet">
+
     <!-- Datatable  -->
     <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
 

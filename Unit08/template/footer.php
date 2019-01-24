@@ -1,11 +1,11 @@
   <!-- Sticky Footer -->
-<footer class="sticky-footer">
+<!-- <footer class="sticky-footer">
   <div class="container my-auto">
     <div class="copyright text-center my-auto">
       <span>Copyright © Your Website 2018</span>
     </div>
   </div>
-</footer>
+</footer> -->
 
 
 </div>
@@ -49,6 +49,11 @@
     <script src="public/js/sb-admin.min.js"></script>
 
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready( function () {
+          $('#myTable').DataTable();
+      } );
+    </script>
 
   </body>
 

@@ -28,7 +28,7 @@
             <input type="text" class="form-control" id="" placeholder="" name="address" value="<?=$row['address']?>">
         </div>   
          
-        <button type="submit" name ="submit" class="btn btn-primary">Sửa Khách Hàng</button>
+        <button type="submit" class="btn btn-primary">Sửa Khách Hàng</button>
     </form>
 </div>
 <?php

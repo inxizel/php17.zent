@@ -1,0 +1,20 @@
+.text-success a{
+	color: white !important;
+    margin: 0 .5em 0 0;
+    padding: .4em .833em;
+    min-width: 3em;
+    text-align: center;
+    background-color: #2df361!important;
+    border-color: #FBC02D!important;
+    border-radius: .2857rem;
+}
+.text-danger a{
+	color: white !important;
+    margin: 0 .5em 0 0;
+    padding: .4em .833em;
+    min-width: 3em;
+    text-align: center;
+    background-color: #ec0f0f!important;
+    border-color: #FBC02D!important;
+    border-radius: .2857rem;
+}

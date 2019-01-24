@@ -32,7 +32,7 @@
             <input type="text" class="form-control" id="" placeholder="" name="password">
         </div>
          
-        <button type="submit" name ="submit" class="btn btn-primary">Thêm Nhân Viên</button>
+        <button type="submit" class="btn btn-primary">Thêm Nhân Viên</button>
     </form>
 </div>
 <?php
