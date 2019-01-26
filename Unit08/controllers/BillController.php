@@ -1,6 +1,7 @@
 <?php
 
 	require_once('models/Bill.php');
+	require_once('models/BillDetail.php');
 	
 	class BillController{
 
@@ -10,13 +11,24 @@
 		}
 		function show(){
 			$data = $this->model->All();
-			require_once('views/product/list.php');
+			require_once('views/bill/list.php');
 		}
 		function detail(){	
 			$code = $_GET['code'];
-			$row = $this->model->detail($code);
+			$bill_detail = new BillDetail();
+
+			$data = $bill_detail->detail($code);
 			require_once('views/bill/detail.php');
 		}
+
+		function xuli(){	
+			$code = $_GET['code'];
+			$bill = new Bill();
+
+			$bill->xuli($code);
+			header("Location: admin.php?mod=bill");
+		}
+
 		function add(){
 
 			$id_add = $this->model->add();
@@ -43,8 +55,9 @@
 
 		}
 		function delete(){
-			$result = $this->model->delete();
-			header("Location: ?mod=product");
+			$code = $_GET['code'];
+			$result = $this->model->delete($code);
+			header("Location: ?mod=bill");
 
 		}
 	}

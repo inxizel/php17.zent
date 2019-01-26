@@ -6,9 +6,14 @@
     </a>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="?mod=bill">
+      <i class="fas fa-fw fa-user"></i>
+      <span>Bán Hàng Online</span></a>
+  </li>
+  <li class="nav-item">
     <a class="nav-link" href="?mod=sale">
       <i class="fas fa-fw fa-user"></i>
-      <span>Bán Hàng</span></a>
+      <span>Bán Hàng Offline</span></a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="?mod=employee">

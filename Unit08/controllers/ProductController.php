@@ -12,9 +12,17 @@
 			$data = $this->model->All();
 			require_once('views/product/list.php');
 		}
+
+		function showmain(){
+			$data = $this->model->All();
+			require_once('views/pages/index.php');
+		}
+
 		function detail(){	
 			$code = $_GET['code'];
+
 			$row = $this->model->detail($code);
+
 			require_once('views/product/detail.php');
 		}
 		function add(){

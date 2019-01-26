@@ -1,5 +1,5 @@
 <?php
-    include_once('template/header.php');
+    include_once('template/header1.php');
     include_once('template/sidebar.php');
 ?>
     <div class="container">
@@ -36,5 +36,5 @@
           </table>
     </div>
 <?php
-    include_once('template/footer.php');
+    include_once('template/footer1.php');
 ?>

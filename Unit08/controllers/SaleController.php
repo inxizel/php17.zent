@@ -30,7 +30,9 @@
 			}
 		}
 		function sale(){
-			if(isset($_GET['err']) &&  $_GET['err'] == 1) echo "Vui lòng thêm sản phẩm vào giỏ hàng";
+			$noti ="";
+			if(isset($_GET['err']) &&  $_GET['err'] == 1) 
+				$noti ="Vui lòng thêm sản phẩm vào giỏ hàng";
 			if (isset($_SESSION['customer'])) {
 				$customer = $_SESSION['customer'];
 
@@ -57,7 +59,7 @@
 				$product['quantity'] = 1;
 				$_SESSION['cart'][$maSp] = $product;
 			}
-			header("Location: ?mod=sale&act=sale");
+			header("Location: admin.php?mod=sale&act=sale");
 		}
 		function remove_product(){
 			$maSp = $_GET['code'];
@@ -66,7 +68,7 @@
 			}else{
 				$_SESSION['cart'][$maSp]['quantity'] = $_SESSION['cart'][$maSp]['quantity'] - 1;
 			}
-			header("Location: ?mod=sale&act=sale");
+			header("Location: admin.php?mod=sale&act=sale");
 
 		}
 		function TongTien(){

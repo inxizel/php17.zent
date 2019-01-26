@@ -60,8 +60,7 @@
 			$result = $this->conn->query($sql);
 		}
 		function delete($code){
-			if(isset($_GET['code'])){
-				$code = $_GET['code'];
+			if($code){
 				$sql = "DELETE FROM ".$this->table_name." WHERE ".$this->primary_key." = '".$code."' ";
 				$result = $this->conn->query($sql);
 			}

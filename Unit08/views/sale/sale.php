@@ -1,11 +1,16 @@
 <?php
-    include_once('template/header.php');
+    include_once('template/header1.php');
     include_once('template/sidebar.php');
-?>
-    <div class="container">
+?>	
+	<div class="container">
+    	<div class="row">
+    		<div class="col-md-12">
+				<h2 align="center"><?=$noti?></h2>
+			</div>
+		</div>
     	<div class="row">
 	    	<div class="col-md-6">
-		        <h2 align="center">DANH SÁCH SẢN PHẨM</h2>
+		        
 		        <table class="table" id="myTable">
 		            <thead>
 		              <tr>
@@ -35,7 +40,7 @@
 		    	<legend><h1 class="text-center">Thông tin khách hàng</h1></legend>
         
 		        <div class="form-group">
-		            <label for="">Mã khách hàng</label>
+		            <label for="">Mã</label>
 		            <input type="text" class="form-control" value="<?=$customer['code']?>" readonly >
 		        </div>
 		        
@@ -93,5 +98,5 @@
 		</div>
     </div>
 <?php
-    include_once('template/footer.php');
+    include_once('template/footer1.php');
 ?>

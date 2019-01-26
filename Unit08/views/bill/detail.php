@@ -1,39 +1,33 @@
 <?php
-    include_once('template/header.php');
+    include_once('template/header1.php');
     include_once('template/sidebar.php');
 ?>
-
 <div class="container">
-
-    <form action="" method="post" role="form">
-        <legend><h1 class="text-center">Thông tin hóa đơn</h1></legend>
-        
-        <div class="form-group">
-            <label for="">Mã hóa đơn</label>
-            <input type="text" class="form-control" value="<?=$row['MaHD']?>" readonly >
-        </div>
-        
-        <div class="form-group">
-            <label for="">Mã khách hàng</label>
-            <input type="text" class="form-control" value="<?=$row['MaKH']?>" readonly>
-        </div>  
-        <div class="form-group">
-            <label for="">Mã nhân viên</label>
-            <input type="text" class="form-control" value="<?=$row['MaNV']?>" readonly>
-        </div>
-        <div class="form-group">
-            <label for="">Tổng tiền</label>
-            <input type="text" class="form-control" value="<?=$row['TongTien']?>" readonly>
-        </div> 
-        <div class="form-group">
-            <label for="">Date</label>
-            <input type="text" class="form-control" value="<?=$row['Date']?>" readonly>
-        </div>   
-         
-        
-    </form>
-    <button class="btn btn-success"><a href="?mod=customer" style="color: #fff">Xem chi tiết hóa đơn</a></button>
+    <h2 align="center">DANH SÁCH KHÁCH HÀNG</h2>
+    <a href="?mod=bill" class="btn btn-primary">Trở lại</a>
+    <table class="table" id="myTable">
+        <thead>
+          <tr>
+            <th>Mã Sản Phẩm</th>
+            <th>Số lượng</th>
+            <th>Đơn Giá</th>
+            <th>Tổng Tiền</th>
+          </tr>
+        </thead>
+        <tbody>
+            <?php 
+                foreach ($data as $row) :
+            ?>
+              <tr>
+                <td><?=$row['MaSP']?></td>
+                <td><?=$row['quantity']?></td>
+                <td><?=$row['price']?></td>
+                <td><?=$row['TongTien']?></td>
+              </tr>
+            <?php endforeach;?>
+        </tbody>
+      </table>
 </div>
 <?php
-    include_once('template/footer.php');
+    include_once('template/footer1.php');
 ?>
